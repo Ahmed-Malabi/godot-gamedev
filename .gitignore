@@ -14,7 +14,7 @@
 ###      Godot v4+      ###
 ###########################
 
-.godot/
+## .godot/
 
 ###########################
 ### Build configuration ###
@@ -30,8 +30,6 @@ misc/hooks/pre-commit-custom-*
 # Buildsystem
 bin
 *.gen.*
-.godot/editor/*
-.godot/uid_cache.bin
 compile_commands.json
 platform/windows/godot_res.res
 
