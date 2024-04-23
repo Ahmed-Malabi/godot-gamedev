@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-const SPEED = 400.0
-const JUMP_VELOCITY = -900.0
+@export var SPEED := 100.01
+@export var JUMP_VELOCITY := -300.0
 
 # Reference to this objects sprite
 # To recreate, click and drag the Sprite2D from the Scene into the script (hold ctrl when releasing mouse click)
