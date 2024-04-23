@@ -11,5 +11,10 @@ config_version=5
 [application]
 
 config/name="Godot-gamedev"
+run/main_scene="res://Scenes/test_level.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[physics]
+
+2d/default_gravity=1500.0
