@@ -1,0 +1,77 @@
+[gd_scene load_steps=9 format=3 uid="uid://d0k03y8371fuq"]
+
+[ext_resource type="Shader" path="res://Scenes/Sam Testing/Resources/isometric_scene.gdshader" id="1_7oxtt"]
+[ext_resource type="MeshLibrary" uid="uid://dsv2wuq3ri41l" path="res://Scenes/Sam Testing/Resources/3D Tiles.tres" id="2_g31r6"]
+
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_8wrvl"]
+
+[sub_resource type="Sky" id="Sky_wltvt"]
+sky_material = SubResource("PhysicalSkyMaterial_8wrvl")
+
+[sub_resource type="Environment" id="Environment_8x7u0"]
+background_mode = 2
+sky = SubResource("Sky_wltvt")
+ambient_light_source = 3
+ambient_light_color = Color(0.685744, 0.682177, 0.93709, 1)
+reflected_light_source = 2
+tonemap_mode = 2
+tonemap_exposure = 0.9
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.015
+volumetric_fog_albedo = Color(0.872382, 0.563361, 0.419639, 1)
+volumetric_fog_emission = Color(0.940095, 0.547341, 0.6889, 1)
+volumetric_fog_emission_energy = 0.1
+volumetric_fog_gi_inject = 2.0
+volumetric_fog_anisotropy = 0.0
+volumetric_fog_length = 256.0
+volumetric_fog_detail_spread = 3.56762
+volumetric_fog_sky_affect = 0.6
+adjustment_enabled = true
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_2f6r1"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xqika"]
+render_priority = 0
+shader = ExtResource("1_7oxtt")
+shader_parameter/WATER_COL = Color(0.04, 0.38, 0.88, 1)
+shader_parameter/WATER2_COL = Color(0.04, 0.35, 0.78, 1)
+shader_parameter/FOAM_COL = Color(0.8125, 0.9609, 0.9648, 1)
+shader_parameter/distortion_speed = 2.0
+shader_parameter/tile = Vector2(50, 50)
+shader_parameter/height = 1.0
+shader_parameter/wave_size = Vector2(6, 6)
+shader_parameter/wave_speed = 4.0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_s5ojv"]
+material = SubResource("ShaderMaterial_xqika")
+top_radius = 1000.0
+
+[node name="world" type="Node3D"]
+
+[node name="environment" type="Node3D" parent="."]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="environment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 100, 0)
+light_energy = 1.5
+light_volumetric_fog_energy = 0.5
+light_angular_distance = 2.0
+shadow_enabled = true
+shadow_normal_bias = 3.0
+shadow_transmittance_bias = 0.0
+shadow_opacity = 0.5
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="environment"]
+environment = SubResource("Environment_8x7u0")
+camera_attributes = SubResource("CameraAttributesPractical_2f6r1")
+
+[node name="water" type="MeshInstance3D" parent="environment"]
+mesh = SubResource("CylinderMesh_s5ojv")
+metadata/_edit_group_ = true
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource("2_g31r6")
+cell_size = Vector3(0.5, 0.5, 0.5)
+data = {
+"cells": PackedInt32Array(41, 65516, 17, 41, 65515, 17, 41, 65514, 17, 41, 65513, 17, 41, 65512, 17, 42, 65512, 17, 43, 65512, 17, 43, 65513, 17, 43, 65514, 17, 43, 65515, 17, 43, 65516, 17, 43, 65517, 17, 42, 65517, 33, 42, 65516, 33, 42, 65513, 33, 42, 65514, 33, 42, 65515, 33, 65578, 65512, 41, 65577, 65512, 41, 65579, 65512, 41, 131116, 65515, 22, 131116, 65517, 22, 65576, 65519, 22, 196652, 65517, 22, 65577, 65520, 25, 65578, 65520, 25, 65579, 65520, 25, 65580, 65520, 25, 65581, 65520, 25, 65581, 65519, 25, 65582, 65519, 25, 65582, 65518, 25, 65583, 65518, 25, 65583, 65517, 25, 65583, 65516, 25, 65583, 65515, 25, 65582, 65515, 25, 65582, 65516, 25, 65582, 65517, 25, 65582, 65514, 25, 65582, 65513, 25, 65583, 65513, 25, 65582, 65512, 25, 65583, 65512, 25, 65583, 65511, 25, 65582, 65511, 25, 65582, 65510, 25, 65582, 65509, 25, 65581, 65509, 25, 65580, 65509, 25, 65579, 65509, 25, 65578, 65509, 25, 65577, 65509, 25, 65576, 65509, 25, 65576, 65508, 25, 65577, 65508, 25, 65577, 65507, 25, 65578, 65507, 25, 65579, 65507, 25, 65580, 65507, 25, 65581, 65507, 25, 65582, 65507, 25, 65583, 65507, 25, 65583, 65506, 25, 65582, 65506, 25, 65581, 65506, 25, 65584, 65507, 25, 65584, 65508, 25, 65585, 65508, 25, 65585, 65509, 25, 65585, 65510, 25, 65585, 65511, 25, 65585, 65512, 25, 65585, 65513, 25, 65585, 65514, 25, 65585, 65515, 25, 65584, 65515, 25, 65584, 65516, 25, 65584, 65517, 25, 65584, 65518, 25, 65584, 65519, 25, 65584, 65520, 25, 65584, 65521, 25, 65583, 65520, 25, 65584, 65514, 25, 65585, 65507, 25, 65583, 65510, 25, 65584, 65510, 25, 65584, 65509, 25, 65583, 65509, 25, 65583, 65508, 25, 65582, 65508, 25, 65578, 65508, 25, 65584, 65506, 25)
+}
+metadata/_editor_floor_ = Vector3(0, 3, 0)

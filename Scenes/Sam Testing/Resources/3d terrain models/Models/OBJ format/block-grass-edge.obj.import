@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dh235sxt1a51y"
+path="res://.godot/imported/block-grass-edge.obj-5ad184a3e97ac42cf0ebe2cd7f7669da.mesh"
+
+[deps]
+
+files=["res://.godot/imported/block-grass-edge.obj-5ad184a3e97ac42cf0ebe2cd7f7669da.mesh"]
+
+source_file="res://Scenes/Sam Testing/Resources/3d terrain models/Models/OBJ format/block-grass-edge.obj"
+dest_files=["res://.godot/imported/block-grass-edge.obj-5ad184a3e97ac42cf0ebe2cd7f7669da.mesh", "res://.godot/imported/block-grass-edge.obj-5ad184a3e97ac42cf0ebe2cd7f7669da.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

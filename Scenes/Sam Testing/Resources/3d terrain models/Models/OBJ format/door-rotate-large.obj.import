@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://utsug4edacal"
+path="res://.godot/imported/door-rotate-large.obj-fa15e17f31b31c5a0c0779f12d7feb77.mesh"
+
+[deps]
+
+files=["res://.godot/imported/door-rotate-large.obj-fa15e17f31b31c5a0c0779f12d7feb77.mesh"]
+
+source_file="res://Scenes/Sam Testing/Resources/3d terrain models/Models/OBJ format/door-rotate-large.obj"
+dest_files=["res://.godot/imported/door-rotate-large.obj-fa15e17f31b31c5a0c0779f12d7feb77.mesh", "res://.godot/imported/door-rotate-large.obj-fa15e17f31b31c5a0c0779f12d7feb77.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

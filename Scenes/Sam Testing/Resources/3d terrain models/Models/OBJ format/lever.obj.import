@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cdaouris3canh"
+path="res://.godot/imported/lever.obj-17ff635a7fca879bae0a3f716a6a8fbf.mesh"
+
+[deps]
+
+files=["res://.godot/imported/lever.obj-17ff635a7fca879bae0a3f716a6a8fbf.mesh"]
+
+source_file="res://Scenes/Sam Testing/Resources/3d terrain models/Models/OBJ format/lever.obj"
+dest_files=["res://.godot/imported/lever.obj-17ff635a7fca879bae0a3f716a6a8fbf.mesh", "res://.godot/imported/lever.obj-17ff635a7fca879bae0a3f716a6a8fbf.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cu7a3fl5nfoqi"
+path="res://.godot/imported/flag.obj-6aa1775f90d5beaeb7498f5e80312d9d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/flag.obj-6aa1775f90d5beaeb7498f5e80312d9d.mesh"]
+
+source_file="res://Scenes/Sam Testing/Resources/3d terrain models/Models/OBJ format/flag.obj"
+dest_files=["res://.godot/imported/flag.obj-6aa1775f90d5beaeb7498f5e80312d9d.mesh", "res://.godot/imported/flag.obj-6aa1775f90d5beaeb7498f5e80312d9d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

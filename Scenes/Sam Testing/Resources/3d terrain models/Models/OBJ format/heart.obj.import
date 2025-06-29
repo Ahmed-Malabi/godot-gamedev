@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://csbcomfrqhffl"
+path="res://.godot/imported/heart.obj-227b8f74cee8f826dc8f4f47dbda3b09.mesh"
+
+[deps]
+
+files=["res://.godot/imported/heart.obj-227b8f74cee8f826dc8f4f47dbda3b09.mesh"]
+
+source_file="res://Scenes/Sam Testing/Resources/3d terrain models/Models/OBJ format/heart.obj"
+dest_files=["res://.godot/imported/heart.obj-227b8f74cee8f826dc8f4f47dbda3b09.mesh", "res://.godot/imported/heart.obj-227b8f74cee8f826dc8f4f47dbda3b09.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
