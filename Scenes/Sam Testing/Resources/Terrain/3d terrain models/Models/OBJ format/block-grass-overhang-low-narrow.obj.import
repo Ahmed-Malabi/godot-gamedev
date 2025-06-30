@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://df1bl0qlr6vs8"
+path="res://.godot/imported/block-grass-overhang-low-narrow.obj-080d64fc49b0de200b3a24156de4a961.mesh"
+
+[deps]
+
+files=["res://.godot/imported/block-grass-overhang-low-narrow.obj-080d64fc49b0de200b3a24156de4a961.mesh"]
+
+source_file="res://Scenes/Sam Testing/Resources/Terrain/3d terrain models/Models/OBJ format/block-grass-overhang-low-narrow.obj"
+dest_files=["res://.godot/imported/block-grass-overhang-low-narrow.obj-080d64fc49b0de200b3a24156de4a961.mesh", "res://.godot/imported/block-grass-overhang-low-narrow.obj-080d64fc49b0de200b3a24156de4a961.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

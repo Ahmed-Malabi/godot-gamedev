@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://4eot8fq58hll"
+path="res://.godot/imported/fence-low-straight.obj-2d701592ef5e8e74a45cb90a20b97aea.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fence-low-straight.obj-2d701592ef5e8e74a45cb90a20b97aea.mesh"]
+
+source_file="res://Scenes/Sam Testing/Resources/Terrain/3d terrain models/Models/OBJ format/fence-low-straight.obj"
+dest_files=["res://.godot/imported/fence-low-straight.obj-2d701592ef5e8e74a45cb90a20b97aea.mesh", "res://.godot/imported/fence-low-straight.obj-2d701592ef5e8e74a45cb90a20b97aea.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

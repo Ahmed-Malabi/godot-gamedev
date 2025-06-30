@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dqsq32t0jn0c1"
+path="res://.godot/imported/button-square.obj-67878579db970ede00d35ee4f708d959.mesh"
+
+[deps]
+
+files=["res://.godot/imported/button-square.obj-67878579db970ede00d35ee4f708d959.mesh"]
+
+source_file="res://Scenes/Sam Testing/Resources/Terrain/3d terrain models/Models/OBJ format/button-square.obj"
+dest_files=["res://.godot/imported/button-square.obj-67878579db970ede00d35ee4f708d959.mesh", "res://.godot/imported/button-square.obj-67878579db970ede00d35ee4f708d959.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

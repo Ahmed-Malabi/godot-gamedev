@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b0t7atmn8yx3b"
+path="res://.godot/imported/saw.obj-f88543aec0e80d7aa85f6ebaf80b6880.mesh"
+
+[deps]
+
+files=["res://.godot/imported/saw.obj-f88543aec0e80d7aa85f6ebaf80b6880.mesh"]
+
+source_file="res://Scenes/Sam Testing/Resources/Terrain/3d terrain models/Models/OBJ format/saw.obj"
+dest_files=["res://.godot/imported/saw.obj-f88543aec0e80d7aa85f6ebaf80b6880.mesh", "res://.godot/imported/saw.obj-f88543aec0e80d7aa85f6ebaf80b6880.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

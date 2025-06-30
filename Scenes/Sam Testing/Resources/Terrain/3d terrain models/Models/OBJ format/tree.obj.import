@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c6ya3hy2l6knl"
+path="res://.godot/imported/tree.obj-0d3da6856f2bc9ef23fe7bcd787c213d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tree.obj-0d3da6856f2bc9ef23fe7bcd787c213d.mesh"]
+
+source_file="res://Scenes/Sam Testing/Resources/Terrain/3d terrain models/Models/OBJ format/tree.obj"
+dest_files=["res://.godot/imported/tree.obj-0d3da6856f2bc9ef23fe7bcd787c213d.mesh", "res://.godot/imported/tree.obj-0d3da6856f2bc9ef23fe7bcd787c213d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

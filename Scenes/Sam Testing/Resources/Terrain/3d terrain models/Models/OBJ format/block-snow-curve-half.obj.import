@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bq5ba43uqtvqe"
+path="res://.godot/imported/block-snow-curve-half.obj-1dd2f6405b0e258ecc361b37215cd10f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/block-snow-curve-half.obj-1dd2f6405b0e258ecc361b37215cd10f.mesh"]
+
+source_file="res://Scenes/Sam Testing/Resources/Terrain/3d terrain models/Models/OBJ format/block-snow-curve-half.obj"
+dest_files=["res://.godot/imported/block-snow-curve-half.obj-1dd2f6405b0e258ecc361b37215cd10f.mesh", "res://.godot/imported/block-snow-curve-half.obj-1dd2f6405b0e258ecc361b37215cd10f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

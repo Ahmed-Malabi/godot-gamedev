@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://odfcc77s6u31"
+path="res://.godot/imported/hedge.obj-3259f0a5f5f6645e1c65e68f39b21ee3.mesh"
+
+[deps]
+
+files=["res://.godot/imported/hedge.obj-3259f0a5f5f6645e1c65e68f39b21ee3.mesh"]
+
+source_file="res://Scenes/Sam Testing/Resources/Terrain/3d terrain models/Models/OBJ format/hedge.obj"
+dest_files=["res://.godot/imported/hedge.obj-3259f0a5f5f6645e1c65e68f39b21ee3.mesh", "res://.godot/imported/hedge.obj-3259f0a5f5f6645e1c65e68f39b21ee3.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

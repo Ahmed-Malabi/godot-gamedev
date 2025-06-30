@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bs8ae2lokixfj"
+path="res://.godot/imported/coin-silver.obj-39079184e5c7f095b8f360c234049d7d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/coin-silver.obj-39079184e5c7f095b8f360c234049d7d.mesh"]
+
+source_file="res://Scenes/Sam Testing/Resources/Terrain/3d terrain models/Models/OBJ format/coin-silver.obj"
+dest_files=["res://.godot/imported/coin-silver.obj-39079184e5c7f095b8f360c234049d7d.mesh", "res://.godot/imported/coin-silver.obj-39079184e5c7f095b8f360c234049d7d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

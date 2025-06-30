@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://2jg2jhf236ab"
+path="res://.godot/imported/fence-broken.obj-4722211b8cb66781e5308620299f868e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fence-broken.obj-4722211b8cb66781e5308620299f868e.mesh"]
+
+source_file="res://Scenes/Sam Testing/Resources/Terrain/3d terrain models/Models/OBJ format/fence-broken.obj"
+dest_files=["res://.godot/imported/fence-broken.obj-4722211b8cb66781e5308620299f868e.mesh", "res://.godot/imported/fence-broken.obj-4722211b8cb66781e5308620299f868e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cemd0c75u6ycg"
+path="res://.godot/imported/block-snow-low-hexagon.obj-191eb8c5ca80e34144bb2d32ee5d9d35.mesh"
+
+[deps]
+
+files=["res://.godot/imported/block-snow-low-hexagon.obj-191eb8c5ca80e34144bb2d32ee5d9d35.mesh"]
+
+source_file="res://Scenes/Sam Testing/Resources/Terrain/3d terrain models/Models/OBJ format/block-snow-low-hexagon.obj"
+dest_files=["res://.godot/imported/block-snow-low-hexagon.obj-191eb8c5ca80e34144bb2d32ee5d9d35.mesh", "res://.godot/imported/block-snow-low-hexagon.obj-191eb8c5ca80e34144bb2d32ee5d9d35.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

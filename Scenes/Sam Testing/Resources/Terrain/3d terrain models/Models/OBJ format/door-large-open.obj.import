@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cf7gpw3b52bbh"
+path="res://.godot/imported/door-large-open.obj-a94aa57e1fdb3353848ff8d439bc218d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/door-large-open.obj-a94aa57e1fdb3353848ff8d439bc218d.mesh"]
+
+source_file="res://Scenes/Sam Testing/Resources/Terrain/3d terrain models/Models/OBJ format/door-large-open.obj"
+dest_files=["res://.godot/imported/door-large-open.obj-a94aa57e1fdb3353848ff8d439bc218d.mesh", "res://.godot/imported/door-large-open.obj-a94aa57e1fdb3353848ff8d439bc218d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

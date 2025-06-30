@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dieei4nbtyvkv"
+path="res://.godot/imported/crate.obj-fdc76827fa951f5674fd0f05cdae629a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/crate.obj-fdc76827fa951f5674fd0f05cdae629a.mesh"]
+
+source_file="res://Scenes/Sam Testing/Resources/Terrain/3d terrain models/Models/OBJ format/crate.obj"
+dest_files=["res://.godot/imported/crate.obj-fdc76827fa951f5674fd0f05cdae629a.mesh", "res://.godot/imported/crate.obj-fdc76827fa951f5674fd0f05cdae629a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
