@@ -17,6 +17,14 @@
 .godot/
 
 ###########################
+###    Sam's Notes      ###
+###########################
+/Notes.txt
+
+/custom.py
+misc/hooks/pre-commit-custom-*
+
+###########################
 ### Build configuration ###
 ###########################
 
