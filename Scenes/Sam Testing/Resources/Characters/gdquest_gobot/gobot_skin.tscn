@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://cy36aygvs66pn"]
+[gd_scene load_steps=55 format=3 uid="uid://cy36aygvs66pn"]
 
 [ext_resource type="PackedScene" uid="uid://kod0awm1ha4o" path="res://Scenes/Sam Testing/Resources/Characters/gdquest_gobot/model/gobot.glb" id="1_qg1mb"]
 [ext_resource type="Script" path="res://Scenes/Sam Testing/Resources/Characters/gdquest_gobot/gobot_skin.gd" id="1_rwke8"]
@@ -2079,7 +2079,7 @@ transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition
 graph_offset = Vector2(-185, -49)
 
 [sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_8xvna"]
-graph_offset = Vector2(-216, 57)
+graph_offset = Vector2(0, 57)
 nodes/Animation/node = SubResource("AnimationNodeAnimation_g4wg5")
 nodes/Animation/position = Vector2(180, 300)
 nodes/Flip/node = SubResource("AnimationNodeAnimation_oi1x1")
@@ -2092,8 +2092,6 @@ nodes/StateMachine/node = SubResource("AnimationNodeStateMachine_fdt88")
 nodes/StateMachine/position = Vector2(0, 80)
 nodes/output/position = Vector2(580, 80)
 node_connections = [&"FlipShot", 0, &"StateMachine", &"FlipShot", 1, &"Flip", &"HurtShot", 0, &"FlipShot", &"HurtShot", 1, &"Animation", &"output", 0, &"HurtShot"]
-
-[sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_chj4k"]
 
 [node name="GobotSkin" type="Node3D" node_paths=PackedStringArray("gobot_model")]
 script = ExtResource("1_rwke8")
@@ -2110,14 +2108,14 @@ bones/0/position = Vector3(0.125361, 0.0989139, 0.0728901)
 bones/0/rotation = Quaternion(0.772549, 0.107691, -0.136221, 0.610749)
 bones/1/position = Vector3(-0.109875, 0.0989111, -0.0510765)
 bones/1/rotation = Quaternion(0.679368, -0.310085, 0.392234, 0.537083)
-bones/2/position = Vector3(0, 0.357083, 0)
-bones/2/rotation = Quaternion(0.0697349, 0.0248084, -0.00173477, 0.997256)
-bones/3/rotation = Quaternion(1, -5.78106e-11, -7.50265e-08, 3.72784e-09)
-bones/4/rotation = Quaternion(-0.449087, -0.1393, -0.0411221, 0.881604)
-bones/5/rotation = Quaternion(0.302414, 1.0865e-06, -1.03345e-05, 0.953177)
-bones/6/rotation = Quaternion(-0.197068, 0.552523, 0.210998, 0.781897)
-bones/7/rotation = Quaternion(0.468384, -1.00863e-06, 1.6022e-05, 0.883525)
-bones/8/rotation = Quaternion(-0.630167, -0.279845, -0.675607, 0.261023)
+bones/2/position = Vector3(0, 0.369163, 0)
+bones/2/rotation = Quaternion(0.0697322, -0.0262943, 0.00183867, 0.997218)
+bones/3/rotation = Quaternion(1, 1.37162e-10, -7.26904e-08, 7.46389e-09)
+bones/4/rotation = Quaternion(-0.344514, -0.194761, -0.04218, 0.917387)
+bones/5/rotation = Quaternion(0.168739, 1.11748e-06, -5.75909e-06, 0.985661)
+bones/6/rotation = Quaternion(-0.187154, 0.509771, 0.153365, 0.825582)
+bones/7/rotation = Quaternion(0.370867, -1.07384e-06, 1.26901e-05, 0.928686)
+bones/8/rotation = Quaternion(-0.652481, -0.270929, -0.654082, 0.270266)
 bones/9/rotation = Quaternion(2.16937e-07, 5.35541e-07, -0.395029, 0.918669)
 bones/10/rotation = Quaternion(-0.289732, -0.637458, -0.217438, 0.680017)
 bones/11/rotation = Quaternion(0.487906, -0.0174399, 0.00854542, 0.87268)
@@ -2125,7 +2123,7 @@ bones/12/rotation = Quaternion(-0.371224, -0.00197697, 0.00585366, 0.928523)
 bones/13/rotation = Quaternion(-0.502333, 1.50049e-05, -2.85054e-05, 0.864674)
 bones/14/rotation = Quaternion(-0.371224, -0.00197698, 0.00585369, 0.928523)
 bones/15/rotation = Quaternion(-0.502333, 1.49999e-05, -2.85068e-05, 0.864674)
-bones/16/rotation = Quaternion(-0.684697, 0.256928, 0.620278, 0.28361)
+bones/16/rotation = Quaternion(-0.663498, 0.266299, 0.642903, 0.27483)
 bones/17/rotation = Quaternion(2.27203e-07, -5.84749e-07, 0.395029, 0.918669)
 bones/18/rotation = Quaternion(-0.289732, 0.637458, 0.217438, 0.680017)
 bones/19/rotation = Quaternion(0.487906, 0.0174399, -0.00854541, 0.87268)
@@ -2161,14 +2159,15 @@ autostart = true
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
 unique_name_in_owner = true
+root_node = NodePath("%AnimationTree/../gobot")
 tree_root = SubResource("AnimationNodeBlendTree_8xvna")
 anim_player = NodePath("../gobot/AnimationPlayer")
-active = true
 parameters/FlipShot/active = false
+parameters/FlipShot/internal_active = false
 parameters/FlipShot/request = 0
 parameters/HurtShot/active = false
+parameters/HurtShot/internal_active = false
 parameters/HurtShot/request = 0
-parameters/StateMachine/playback = SubResource("AnimationNodeStateMachinePlayback_chj4k")
 parameters/StateMachine/Run/Add2/add_amount = 1.0
 
 [editable path="gobot"]

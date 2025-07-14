@@ -6,7 +6,7 @@ signal foot_step
 ## Gobot's MeshInstance3D model.
 @export var gobot_model: MeshInstance3D
 ## Determines whether blinking is enabled or disabled.
-@export var blink = true : set = _set_blink
+@onready var blink = true : set = _set_blink
 @export var _left_eye_mat_override: String
 @export var _right_eye_mat_override: String
 @export var _open_eye: CompressedTexture2D
@@ -20,8 +20,10 @@ signal foot_step
 @onready var _flip_shot_path: String = "parameters/FlipShot/request"
 @onready var _hurt_shot_path: String = "parameters/HurtShot/request"
 
-@onready var _blink_timer = %BlinkTimer
-@onready var _closed_eyes_timer = %ClosedEyesTimer
+## @onready var _blink_timer = %BlinkTimer
+## @onready var _closed_eyes_timer = %ClosedEyesTimer
+var _blink_timer := Timer.new()
+var _closed_eyes_timer := Timer.new()
 
 @onready var _left_eye_mat: StandardMaterial3D = gobot_model.get(_left_eye_mat_override)
 @onready var _right_eye_mat: StandardMaterial3D = gobot_model.get(_right_eye_mat_override)

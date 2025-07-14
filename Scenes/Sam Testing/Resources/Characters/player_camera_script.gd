@@ -3,9 +3,17 @@ extends CharacterBody3D
 @export_group("Camera")
 @export_range(0.0, 1.0) var mouse_sensitivity := 0.25
 
+@export_group("Movement")
+@export var move_speed := 8.0
+@export var acceleration := 20.0
+
+
 var _camera_input_direction := Vector2.ZERO
+var _last_movement_direction := Vector3.BACK
 
 @onready var _camera_pivot: Node3D = %"Camera Pivot"
+@onready var _camera: Camera3D = %Camera3D
+@onready var _skin := %GobotSkin
 
 ## _input hooks into the games mouse and keyboard inputs
 func _input(event: InputEvent) -> void:
@@ -34,3 +42,17 @@ func _physics_process(delta: float) -> void:
 	_camera_pivot.rotation.y -= _camera_input_direction.x * delta
 	## Reset the camera direction at the end of the process so it stops rotating
 	_camera_input_direction = Vector2.ZERO
+	## Calculate direction relative to the camera
+	var raw_input := Input.get_vector("move_left", "move_right", "move_up", "move_down")
+	var forward := _camera.global_basis.z
+	var right := _camera.global_basis.x
+	var move_direction := forward * raw_input.y + right * raw_input.x
+	move_direction.y = 0.0
+	move_direction = move_direction.normalized()
+	velocity = velocity.move_toward(move_direction * move_speed, acceleration * delta)
+	move_and_slide()
+	
+	if move_direction.length() > 0.2:
+		_last_movement_direction = move_direction
+	var target_angle := Vector3.BACK.signed_angle_to(_last_movement_direction, Vector3.UP)
+	_skin.global_rotation.y = target_angle

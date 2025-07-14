@@ -573,6 +573,7 @@ data = PackedVector3Array(-0.0896, 0.2312, 0.1553, 0.051, 0.8091, 0.0883, 0.0896
 
 [node name="Arrow" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.102089, 0, 0.113328)
+layers = 2
 mesh = ExtResource("1_3e6ef")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Arrow"]
@@ -582,6 +583,7 @@ shape = SubResource("ConcavePolygonShape3D_y5vmc")
 
 [node name="Arrows" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.102089, 0, 0.113328)
+layers = 2
 mesh = ExtResource("2_wu43k")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Arrows"]
