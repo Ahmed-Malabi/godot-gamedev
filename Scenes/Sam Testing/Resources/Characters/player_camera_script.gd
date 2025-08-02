@@ -1,5 +1,8 @@
 extends CharacterBody3D
 
+# Written with the assistance of this free tutorial
+# https://www.youtube.com/watch?v=JlgZtOFMdfc
+
 @export_group("Camera")
 @export_range(0.0, 1.0) var mouse_sensitivity := 0.25
 
