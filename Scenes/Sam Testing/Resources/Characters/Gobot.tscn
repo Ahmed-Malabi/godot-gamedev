@@ -1,7 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://dcmhb703ex74x"]
+[gd_scene load_steps=9 format=3 uid="uid://dcmhb703ex74x"]
 
 [ext_resource type="PackedScene" uid="uid://cy36aygvs66pn" path="res://Scenes/Sam Testing/Resources/Characters/gdquest_gobot/gobot_skin.tscn" id="1_3dgda"]
 [ext_resource type="Script" path="res://Scenes/Sam Testing/Resources/Characters/player_camera_script.gd" id="1_i4mri"]
+[ext_resource type="Texture2D" uid="uid://b1mboe1qvdgqp" path="res://Scenes/Sam Testing/Resources/UI/Sprites/Hotbar/tile_1.png" id="3_ab4sd"]
+[ext_resource type="Texture2D" uid="uid://q3xnwawdlhba" path="res://Scenes/Sam Testing/Resources/UI/Sprites/Hotbar/tile_2.png" id="4_0vnk1"]
+[ext_resource type="Texture2D" uid="uid://dsr0p2nanxquw" path="res://Scenes/Sam Testing/Resources/UI/Sprites/Hotbar/tile_3.png" id="5_1ncsd"]
+[ext_resource type="Texture2D" uid="uid://83wrky54r77y" path="res://Scenes/Sam Testing/Resources/UI/Sprites/Hotbar/tile_4.png" id="6_0tqf4"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6mrd6"]
 radius = 0.396408
@@ -30,8 +34,34 @@ transform = Transform3D(1, 0, 0, 0, 0.774801, -0.632205, 0, 0.632205, 0.774801, 
 
 [node name="SpringArm3D" type="SpringArm3D" parent="Camera Pivot"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+collision_mask = 2
 shape = SubResource("SphereShape3D_7nbdi")
 spring_length = 8.0
 
 [node name="Camera3D" type="Camera3D" parent="Camera Pivot/SpringArm3D"]
 unique_name_in_owner = true
+
+[node name="Hotbar" type="ItemList" parent="."]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -109.5
+offset_top = -55.0
+offset_right = 109.5
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 8
+item_count = 4
+max_columns = 4
+item_0/text = "1"
+item_0/icon = ExtResource("3_ab4sd")
+item_1/text = "2"
+item_1/icon = ExtResource("4_0vnk1")
+item_2/text = "3"
+item_2/icon = ExtResource("5_1ncsd")
+item_3/text = "4"
+item_3/icon = ExtResource("6_0tqf4")
