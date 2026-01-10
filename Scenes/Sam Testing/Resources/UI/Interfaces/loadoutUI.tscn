@@ -1,0 +1,56 @@
+[gd_scene load_steps=10 format=3 uid="uid://dcjyo21hsl1hb"]
+
+[ext_resource type="PackedScene" uid="uid://b0tk4tuiat08h" path="res://Scenes/Sam Testing/Resources/UI/Interfaces/hotbar_button.tscn" id="1_773ei"]
+[ext_resource type="Texture2D" uid="uid://b1mboe1qvdgqp" path="res://Scenes/Sam Testing/Resources/UI/Sprites/Hotbar/tile_1.png" id="2_1cml6"]
+[ext_resource type="Shortcut" uid="uid://wxgmyxdre14m" path="res://Scenes/Sam Testing/Resources/UI/Interfaces/Shortcuts/hotkey_1.tres" id="2_70xtl"]
+[ext_resource type="Texture2D" uid="uid://q3xnwawdlhba" path="res://Scenes/Sam Testing/Resources/UI/Sprites/Hotbar/tile_2.png" id="3_tuc18"]
+[ext_resource type="Shortcut" uid="uid://dcssb4j6hnic7" path="res://Scenes/Sam Testing/Resources/UI/Interfaces/Shortcuts/hotkey_2.tres" id="4_6mmxw"]
+[ext_resource type="Texture2D" uid="uid://dsr0p2nanxquw" path="res://Scenes/Sam Testing/Resources/UI/Sprites/Hotbar/tile_3.png" id="4_23uau"]
+[ext_resource type="Texture2D" uid="uid://flyems3nwtbp" path="res://Scenes/Sam Testing/Resources/UI/Sprites/Hotbar/tile_5.png" id="5_xdu31"]
+[ext_resource type="Shortcut" uid="uid://cnisn7eavx6g5" path="res://Scenes/Sam Testing/Resources/UI/Interfaces/Shortcuts/hotkey_3.tres" id="6_wgb2q"]
+[ext_resource type="Shortcut" uid="uid://ccdybaqdyu3uo" path="res://Scenes/Sam Testing/Resources/UI/Interfaces/Shortcuts/hotkey_4.tres" id="8_38icl"]
+
+[node name="LoadoutUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HotbarButton" parent="HBoxContainer" instance=ExtResource("1_773ei")]
+layout_mode = 2
+shortcut = ExtResource("2_70xtl")
+icon = ExtResource("2_1cml6")
+icon_alignment = 1
+vertical_icon_alignment = 2
+button_value = "whoops!"
+
+[node name="HotbarButton2" parent="HBoxContainer" instance=ExtResource("1_773ei")]
+layout_mode = 2
+shortcut = ExtResource("4_6mmxw")
+icon = ExtResource("3_tuc18")
+icon_alignment = 1
+vertical_icon_alignment = 2
+button_value = "whoops!"
+
+[node name="HotbarButton3" parent="HBoxContainer" instance=ExtResource("1_773ei")]
+layout_mode = 2
+shortcut = ExtResource("6_wgb2q")
+icon = ExtResource("4_23uau")
+icon_alignment = 1
+vertical_icon_alignment = 2
+button_value = "whoops!"
+
+[node name="HotbarButton4" parent="HBoxContainer" instance=ExtResource("1_773ei")]
+layout_mode = 2
+shortcut = ExtResource("8_38icl")
+icon = ExtResource("5_xdu31")
+icon_alignment = 1
+vertical_icon_alignment = 2
+button_value = "whoops!"

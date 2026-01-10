@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0tk4tuiat08h"]
+
+[ext_resource type="Script" path="res://Scenes/Sam Testing/Resources/UI/Interfaces/hotbar_button.gd" id="1_spa51"]
+
+[node name="HotbarButton" type="Button"]
+custom_minimum_size = Vector2(30, 30)
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("1_spa51")
